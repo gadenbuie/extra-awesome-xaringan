@@ -14,6 +14,10 @@ web: https://www.garrickadenbuie.com
 [grrrck]: https://twitter.com/grrrck
 [gab]: https://www.garrickadenbuie.com
 
+# Extra Awesome xaringan Presentations
+
+
+
 ## Description
 
 Learn how to make extra awesome [xaringan] presentations with a few new packages
@@ -36,14 +40,11 @@ _slides will be added soon..._
 
 ## Data
 
-Links to your data sources (external or included in this folder).
+I think I will probably use the `babynames` package at least once.
 
 ## Packages Used
 
-List the packages used for your code.
-If a particular package is the focus of your talk, be sure to include a link to that package's documentation.
-
-To automatically find the R packages you used in your slides/code, you can try the [automagic](https://cran.r-project.org/package=automagic) package.
+I'll use `xaringan`, `ggplot2`, `babynames` and three packages that I've released to GitHub. Use the code chunk below to install all the packages you'll need to follow along.
 
 ```r
 install.packages("xaringan")

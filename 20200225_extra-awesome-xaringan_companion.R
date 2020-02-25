@@ -1,4 +1,4 @@
-# "Extra Awesine xaringan Presentations" Companion R Script ---------------
+# "Extra Awesome xaringan Presentations" Companion R Script ---------------
 
 # title: Extra Awesome xaringan Presentations
 # presenter: Garrick Aden-Buie
