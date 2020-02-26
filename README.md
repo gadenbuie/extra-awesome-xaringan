@@ -33,9 +33,8 @@ Garrick is a Scientific Programmer and data scientist at Moffitt Cancer Center w
 
 Included files:
 
-- [20200225_extra-awesome-xaringan_companion.R](20200225_extra-awesome-xaringan_companion.R)
-
-_slides will be added soon..._
+- [companion.R](companion.R)
+- slides in [docs folder](docs)
 
 ## Data
 
