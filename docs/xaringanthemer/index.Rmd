@@ -24,18 +24,32 @@ options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(fig.showtext = TRUE, fig.width = 8, fig.height = 6, dpi = 300)
 ```
 
-```{r xaringan-themer, include=FALSE}
-library(xaringanthemer)
-style_duo_accent(
-  primary_color = "#1381B0",
-  secondary_color = "#FF961C",
-  inverse_header_color = "#FFFFFF"
-)
-```
-
 # xaringanthemer
 
 ### pkg.garrickadenbuie.com/xaringanthemer/dev
+
+---
+class: middle
+
+### Install xaringanthemer
+
+```{r install, eval=FALSE}
+devtools::install_github("gadenbuie/xaringanthemer@dev")
+```
+
+.silver[Install from .code[dev] branch!]
+
+### Create our slide's theme
+
+```{r xaringan-themer}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1b9aaa",
+  secondary_color = "#ffc43d",
+  text_font_google = google_font("Coming Soon"),  #<< this is crazy but okay
+  header_font_google = google_font("Trade Winds") #<< very on brand for Tampa
+)
+```
 
 ---
 
@@ -165,7 +179,7 @@ ggplot(iris) +
 ---
 class: inverse
 
-# Themed plot
+# Inverse Themed plot
 
 .pull-left[
 ```{r plot-xt-inverse, fig.show='hide'}

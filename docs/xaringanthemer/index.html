@@ -31,11 +31,34 @@ class: center, middle
 
 
 
-
-
 # xaringanthemer
 
 ### pkg.garrickadenbuie.com/xaringanthemer/dev
+
+---
+class: middle
+
+### Install xaringanthemer
+
+
+```r
+devtools::install_github("gadenbuie/xaringanthemer@dev")
+```
+
+.silver[Install from .code[dev] branch!]
+
+### Create our slide's theme
+
+
+```r
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1b9aaa",
+  secondary_color = "#ffc43d",
+  text_font_google = google_font("Coming Soon"),  #&lt;&lt; this is crazy but okay
+  header_font_google = google_font("Trade Winds") #&lt;&lt; very on brand for Tampa
+)
+```
 
 ---
 
@@ -168,7 +191,7 @@ ggplot(iris) +
 ---
 class: inverse
 
-# Themed plot
+# Inverse Themed plot
 
 .pull-left[
 
@@ -272,8 +295,8 @@ DT::datatable(
 )
 ```
 
-<div id="htmlwidget-cde71597c75d5458e5ca" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-cde71597c75d5458e5ca">{"x":{"filter":"none","fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-7c04b5b4be27fab2dd5a" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7c04b5b4be27fab2dd5a">{"x":{"filter":"none","fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10"],[5.1,4.9,4.7,4.6,5,5.4,4.6,5,4.4,4.9],[3.5,3,3.2,3.1,3.6,3.9,3.4,3.4,2.9,3.1],[1.4,1.4,1.3,1.5,1.4,1.7,1.4,1.5,1.4,1.5],[0.2,0.2,0.2,0.2,0.2,0.4,0.3,0.2,0.2,0.1],["setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa","setosa"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Sepal.Length<\/th>\n      <th>Sepal.Width<\/th>\n      <th>Petal.Length<\/th>\n      <th>Petal.Width<\/th>\n      <th>Species<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":8,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 
 ---
 

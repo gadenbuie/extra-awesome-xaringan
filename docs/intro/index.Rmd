@@ -11,7 +11,7 @@ output:
     nature:
       highlightStyle: github
       highlightLines: true
-      countIncrementalSlides: false
+      countIncrementalSlides: true
       ratio: 16:9
       slideNumberFormat: "%current%"
 ---
@@ -103,7 +103,7 @@ slides_from_images <- function(
 
   paste(txt, sep = "", collapse = "")
 }
-options("slide_image_placeholder" = TRUE)
+options("slide_image_placeholder" = FALSE)
 ```
 
 class: left title-slide
@@ -603,6 +603,10 @@ And hey, there's a &#x1F37A; over &#x1F449;
 <img src="beer.jpg" width="60%" class="center" />
 ]
 
+???
+
+Think of something _extra_ **witty** to say about beers.
+
 ---
 
 .code.light-silver[
@@ -681,7 +685,7 @@ output:
     nature:
       highlightStyle: github
       highlightLines: true
-      countIncrementalSlides: false
+      countIncrementalSlides: true
       slideNumberFormat: "%current%"
       ratio: 16:9
 ```
@@ -702,7 +706,7 @@ output:
     nature:
       highlightStyle: github
       highlightLines: true
-      countIncrementalSlides: false
+      countIncrementalSlides: true
       slideNumberFormat: "%current%"
       ratio: 16:9
 ```
@@ -729,7 +733,7 @@ output:
     nature:
       highlightStyle: github
       highlightLines: true
-      countIncrementalSlides: false
+      countIncrementalSlides: true
       slideNumberFormat: "%current%"
       ratio: 16:9
 ```
@@ -756,7 +760,7 @@ output:
     nature:
       highlightStyle: github
       highlightLines: true
-      countIncrementalSlides: false
+      countIncrementalSlides: true
       slideNumberFormat: "%current%"
       ratio: 16:9
 ```
@@ -779,7 +783,7 @@ output:
     nature:
 *     highlightStyle: github
       highlightLines: true
-      countIncrementalSlides: false
+      countIncrementalSlides: true
       slideNumberFormat: "%current%"
       ratio: 16:9
 ```
@@ -804,7 +808,7 @@ output:
     nature:
       highlightStyle: github
 *     highlightLines: true
-      countIncrementalSlides: false
+      countIncrementalSlides: true
       slideNumberFormat: "%current%"
       ratio: 16:9
 ```
@@ -831,7 +835,7 @@ output:
     nature:
       highlightStyle: github
       highlightLines: true
-*     countIncrementalSlides: false
+*     countIncrementalSlides: true
 *     slideNumberFormat: "%current%"
       ratio: 16:9
 ```
@@ -854,7 +858,7 @@ output:
     nature:
       highlightStyle: github
       highlightLines: true
-      countIncrementalSlides: false
+      countIncrementalSlides: true
       slideNumberFormat: "%current%"
 *     ratio: 16:9
 ```

@@ -18,18 +18,18 @@
  *  Version: 0.2.0.9100
  *
  * ------------------------------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Cabin:600,600i&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Coming+Soon&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Trade+Winds&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap);
 
 
 :root {
   /* Fonts */
-  --text-font-family: 'Noto Sans';
+  --text-font-family: 'Coming Soon';
   --text-font-is-google: 1;
   --text-font-family-fallback: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial;
   --text-font-base: sans-serif;
-  --header-font-family: Cabin;
+  --header-font-family: 'Trade Winds';
   --header-font-is-google: 1;
   --code-font-family: 'Source Code Pro';
   --code-font-is-google: 1;
@@ -43,17 +43,17 @@
 
   /* Colors */
   --text-color: #000000;
-  --header-color: #1381B0;
+  --header-color: #1b9aaa;
   --background-color: #FFFFFF;
-  --link-color: #1381B0;
-  --text-bold-color: #1381B0;
+  --link-color: #1b9aaa;
+  --text-bold-color: #1b9aaa;
   --code-highlight-color: rgba(255,255,0,0.5);
   --inverse-text-color: #000000;
-  --inverse-background-color: #FF961C;
-  --inverse-header-color: #FFFFFF;
-  --title-slide-background-color: #1381B0;
+  --inverse-background-color: #ffc43d;
+  --inverse-header-color: #000000;
+  --title-slide-background-color: #1b9aaa;
   --title-slide-text-color: #000000;
-  --header-background-color: #1381B0;
+  --header-background-color: #1b9aaa;
   --header-background-text-color: #FFFFFF;
 }
 
@@ -63,7 +63,7 @@ html {
 
 body {
   font-family: var(--text-font-family), var(--text-font-family-fallback), var(--text-font-base);
-  font-weight: normal;
+  font-weight: ;
   color: var(--text-color);
 }
 h1, h2, h3 {
@@ -95,10 +95,10 @@ h1, h2, h3 {
 }
 .remark-inline-code {
   font-size: var(--code-inline-font-size);
-  color: #1381B0;
+  color: #1b9aaa;
 }
 .remark-slide-number {
-  color: #1381B0;
+  color: #1b9aaa;
   opacity: 1;
   font-size: 0.9em;
 }
@@ -140,10 +140,10 @@ a, a > code {
   float: left;
 }
 .left-column h2, .left-column h3 {
-  color: #1381B099;
+  color: #1b9aaa99;
 }
 .left-column h2:last-of-type, .left-column h3:last-child {
-  color: #1381B0;
+  color: #1b9aaa;
 }
 .right-column {
   width: 75%;
@@ -165,7 +165,7 @@ img, video, iframe {
   max-width: 100%;
 }
 blockquote {
-  border-left: solid 5px #FF961C80;
+  border-left: solid 5px #ffc43d80;
   padding-left: 1em;
 }
 .remark-slide table {
@@ -180,7 +180,7 @@ th, td {
   padding: 5px;
 }
 .remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) {
-  background: #FFEAD1;
+  background: #FFF3D8;
 }
 table.dataTable tbody {
   background-color: var(--background-color);
@@ -190,7 +190,7 @@ table.dataTable.display tbody tr.odd {
   background-color: var(--background-color);
 }
 table.dataTable.display tbody tr.even {
-  background-color: #FFEAD1;
+  background-color: #FFF3D8;
 }
 table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.5);
