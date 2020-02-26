@@ -144,22 +144,26 @@ Tampa UseRs Group — Feb 25, 2020
 ]
 
 ```{css echo=FALSE}
-@keyframes blur-in{
+@keyframes title-text{
     0% {
         opacity: 0;
-        filter: blur(10px);
+        text-shadow: -20px 30px 5px rgba(0,0,0,0.25);
+        transform: translate(15px, -15px);
     }
-    20% {
+    10% {
         opacity: 0;
-        filter: blur(10px);
+        text-shadow: -20px 30px 5px rgba(0,0,0,0.25);
+        transform: translate(15px, -15px);
     }
     80% {
         opacity: 1;
-        filter: blur(0);
+        text-shadow: -5px 5px 10px rgba(0,0,0,0.25);
+        transform: translate(0, 0);
     }
     100% {
         opacity: 1;
-        filter: blur(0);
+        text-shadow: -5px 5px 10px rgba(0,0,0,0.25);
+        transform: translate(0, 0);
     }
 }
 
@@ -204,9 +208,9 @@ Tampa UseRs Group — Feb 25, 2020
 .title-slide h1 {
 	font-size: 100px;
 	font-family: Jost, sans;
-	animation-name: blur-in;
+	animation-name: title-text;
 	animation-duration: 13s;
-	animation-direction: alternate-reverse;
+	animation-direction: alternate;
 	animation-iteration-count: infinite;
 }
 
@@ -221,7 +225,7 @@ Tampa UseRs Group — Feb 25, 2020
   transition: opacity 0.5s ease-in-out;
 	animation-name: enter-right;
 	animation-duration: 13s;
-	animation-direction: alternate-reverse;
+	animation-direction: alternate;
 	animation-iteration-count: infinite;
 }
 
@@ -241,7 +245,7 @@ Tampa UseRs Group — Feb 25, 2020
 	top: -30px;
 	animation-name: enter-left;
 	animation-duration: 13s;
-	animation-direction: alternate-reverse;
+	animation-direction: alternate;
 	animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }

@@ -63,22 +63,26 @@ Tampa UseRs Group — Feb 25, 2020
 ]
 
 &lt;style type="text/css"&gt;
-@keyframes blur-in{
+@keyframes title-text{
     0% {
         opacity: 0;
-        filter: blur(10px);
+        text-shadow: -20px 30px 5px rgba(0,0,0,0.25);
+        transform: translate(15px, -15px);
     }
-    20% {
+    10% {
         opacity: 0;
-        filter: blur(10px);
+        text-shadow: -20px 30px 5px rgba(0,0,0,0.25);
+        transform: translate(15px, -15px);
     }
     80% {
         opacity: 1;
-        filter: blur(0);
+        text-shadow: -5px 5px 10px rgba(0,0,0,0.25);
+        transform: translate(0, 0);
     }
     100% {
         opacity: 1;
-        filter: blur(0);
+        text-shadow: -5px 5px 10px rgba(0,0,0,0.25);
+        transform: translate(0, 0);
     }
 }
 
@@ -123,9 +127,9 @@ Tampa UseRs Group — Feb 25, 2020
 .title-slide h1 {
 	font-size: 100px;
 	font-family: Jost, sans;
-	animation-name: blur-in;
+	animation-name: title-text;
 	animation-duration: 13s;
-	animation-direction: alternate-reverse;
+	animation-direction: alternate;
 	animation-iteration-count: infinite;
 }
 
@@ -140,7 +144,7 @@ Tampa UseRs Group — Feb 25, 2020
   transition: opacity 0.5s ease-in-out;
 	animation-name: enter-right;
 	animation-duration: 13s;
-	animation-direction: alternate-reverse;
+	animation-direction: alternate;
 	animation-iteration-count: infinite;
 }
 
@@ -160,7 +164,7 @@ Tampa UseRs Group — Feb 25, 2020
 	top: -30px;
 	animation-name: enter-left;
 	animation-duration: 13s;
-	animation-direction: alternate-reverse;
+	animation-direction: alternate;
 	animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
@@ -630,7 +634,7 @@ yet another mother loving thing to ~~learn~~ lookup
 title: "Your Presentation Name"
 subtitle: "Another tag line"  
 author: "Dr. Mrs. Fancy Pants"
-date: '2020-02-25'
+date: '2020-02-26'
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -651,7 +655,7 @@ output:
 title: "Your Presentation Name"
 subtitle: "Another tag line"  
 author: "Dr. Mrs. Fancy Pants"
-date: '2020-02-25'
+date: '2020-02-26'
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -678,7 +682,7 @@ xaringan::summon_remark()
 title: "Your Presentation Name"
 subtitle: "Another tag line"  
 author: "Dr. Mrs. Fancy Pants"
-date: '2020-02-25'
+date: '2020-02-26'
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -705,7 +709,7 @@ https://github.com/yihui/xaringan/wiki/Themes
 title: "Your Presentation Name"
 subtitle: "Another tag line"  
 author: "Dr. Mrs. Fancy Pants"
-date: '2020-02-25'
+date: '2020-02-26'
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -728,7 +732,7 @@ I usually make my own title slides
 title: "Your Presentation Name"
 subtitle: "Another tag line"  
 author: "Dr. Mrs. Fancy Pants"
-date: '2020-02-25'
+date: '2020-02-26'
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -753,7 +757,7 @@ Pick the code syntax theme that works for you!
 title: "Your Presentation Name"
 subtitle: "Another tag line"  
 author: "Dr. Mrs. Fancy Pants"
-date: '2020-02-25'
+date: '2020-02-26'
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -780,7 +784,7 @@ data %&gt;%
 title: "Your Presentation Name"
 subtitle: "Another tag line"  
 author: "Dr. Mrs. Fancy Pants"
-date: '2020-02-25'
+date: '2020-02-26'
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -803,7 +807,7 @@ Every slide counts, but don't give away how many slides are in your presentation
 title: "Your Presentation Name"
 subtitle: "Another tag line"  
 author: "Dr. Mrs. Fancy Pants"
-date: '2020-02-25'
+date: '2020-02-26'
 output:
   xaringan::moon_reader:
     lib_dir: libs
