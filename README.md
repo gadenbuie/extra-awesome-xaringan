@@ -1,14 +1,13 @@
 ---
 title: Extra Awesome xaringan Presentations
-presenter: Garrick Aden-Buie
 date: 2020-02-25
-email: garrick@adenbuie.com
+where: Tampa Users Group
 twitter: "@grrrck"
 web: https://www.garrickadenbuie.com
 ---
 
 [xaringan]: https://slides.yihui.org/xaringan/
-[xaringanthemer]: https://pkg.garrickadenbuie.com/xaringanthemer
+[xaringanthemer]: https://pkg.garrickadenbuie.com/xaringanthemer/dev
 [xaringanExtra]: https://pkg.garrickadenbuie.com/xaringanExtra
 [metathis]: https://pkg.garrickadenbuie.com/metathis
 [grrrck]: https://twitter.com/grrrck
@@ -58,3 +57,5 @@ devtools::install_github("gadenbuie/xaringanthemer@dev", dependencies = TRUE)
 devtools::install_github("gadenbuie/xaringanExtra", dependencies = TRUE)
 devtools::install_github("gadenbuie/metathis", dependencies = TRUE)
 ```
+
+Note that the `dev` branch of [xaringanthemer] is needed at the time of this presentation. I'm currently working on finishing up the next release and plan to subit to CRAN. Some of the features I'll show off here are brand new!
