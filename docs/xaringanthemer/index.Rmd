@@ -21,7 +21,12 @@ class: center, middle
 ```{r setup, include=FALSE}
 library(ggplot2)
 options(htmltools.dir.version = FALSE)
-knitr::opts_chunk$set(fig.showtext = TRUE, fig.width = 8, fig.height = 6, dpi = 300)
+knitr::opts_chunk$set(
+  # fig.showtext = TRUE, 
+  fig.width = 8, 
+  fig.height = 6, 
+  dpi = 300
+)
 ```
 
 # xaringanthemer
@@ -147,10 +152,10 @@ class: inverse, middle, center
 
 .pull-left[
 ```{r plot-regular, comment='#', fig.show='hide'}
-ggplot(iris) +
-    aes(Petal.Length, Petal.Width) +
+ggplot(mpg) +
+    aes(cty, hwy) +
     geom_point() +
-    ggtitle("Yet another Iris plot")
+    ggtitle("Fuel efficiency!")
 ```
 ]
 
@@ -164,10 +169,10 @@ ggplot(iris) +
 
 .pull-left[
 ```{r plot-xt, fig.show='hide'}
-ggplot(iris) +
-    aes(Petal.Length, Petal.Width) +
+ggplot(mpg) +
+    aes(cty, hwy) +
     geom_point() +
-    ggtitle("Yet another Iris plot") +
+    ggtitle("Fuel efficiency!") +
     theme_xaringan() #<<
 ```
 ]
@@ -183,10 +188,10 @@ class: inverse
 
 .pull-left[
 ```{r plot-xt-inverse, fig.show='hide'}
-ggplot(iris) +
-    aes(Petal.Length, Petal.Width) +
+ggplot(mpg) +
+    aes(cty, hwy) +
     geom_point() +
-    ggtitle("Yet another Iris plot") +
+    ggtitle("Fuel efficiency!") +
     theme_xaringan_inverse() #<<
 ```
 ]
@@ -202,7 +207,7 @@ ggplot(iris) +
 If you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,
 
 ```{r}
-knitr::kable(head(iris), format = 'html')
+knitr::kable(head(mpg), format = 'html')
 ```
 
 ---
@@ -219,7 +224,7 @@ See the next page for two HTML widgets.
 
 ```{r eval=require('DT'), tidy=FALSE}
 DT::datatable(
-  head(iris, 10),
+  head(mpg, 10),
   fillContainer = FALSE, options = list(pageLength = 8)
 )
 ```

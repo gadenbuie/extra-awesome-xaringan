@@ -15,7 +15,7 @@
  *    - xaringan wiki: https://github.com/yihui/xaringan/wiki
  *    - remarkjs wiki: https://github.com/gnab/remark/wiki
  *
- *  Version: 0.2.0.9100
+ *  Version: 0.3.0
  *
  * ------------------------------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Coming+Soon&display=swap);
@@ -55,6 +55,10 @@
   --title-slide-text-color: #000000;
   --header-background-color: #1b9aaa;
   --header-background-text-color: #FFFFFF;
+  --primary: #1b9aaa;
+  --secondary: #ffc43d;
+  --white: #FFFFFF;
+  --black: #000000;
 }
 
 html {
@@ -63,7 +67,7 @@ html {
 
 body {
   font-family: var(--text-font-family), var(--text-font-family-fallback), var(--text-font-base);
-  font-weight: ;
+  font-weight: normal;
   color: var(--text-color);
 }
 h1, h2, h3 {
@@ -230,4 +234,28 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
   }
 }
 
+.primary {
+  color: var(--primary);
+}
+.bg-primary {
+  background-color: var(--primary);
+}
+.secondary {
+  color: var(--secondary);
+}
+.bg-secondary {
+  background-color: var(--secondary);
+}
+.white {
+  color: var(--white);
+}
+.bg-white {
+  background-color: var(--white);
+}
+.black {
+  color: var(--black);
+}
+.bg-black {
+  background-color: var(--black);
+}
 
